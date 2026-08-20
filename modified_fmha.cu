@@ -589,8 +589,7 @@ void run_fwd_128(Fusion fusion, Options const& options, cutlass::KernelHardwareI
 
   using HeadDim = _128;
 
-  //run(Shape< _64, _16, HeadDim>{}, cutlass::gemm::KernelMultistage{}, "simt 64x16x128");
-  std::cout << "Not supported yet." << std::endl;
+  run(Shape< _64, _16, HeadDim>{}, cutlass::gemm::KernelMultistage{}, "simt 64x16x128");
 }
 
 #endif
